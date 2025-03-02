@@ -1,0 +1,28 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2025-03-01 23:29:38.412287",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Ride Booking",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Hy, Your new booking is arrived\n<a href:\"http://localhost:8000/app\"> Click Here to View</a>",
+ "message_type": "HTML",
+ "modified": "2025-03-01 23:29:38.412287",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Ride Booking Arrived",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.customer_name}} Booked a vehicle"
+}
