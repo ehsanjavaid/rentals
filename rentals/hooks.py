@@ -1,7 +1,7 @@
 app_name = "rentals"
 app_title = "Rentals"
 app_publisher = "Ahsan"
-app_description = "Rentals System"
+app_description = "Manage Rentals in frappe"
 app_email = "ehsanjavaid321@gmail.com"
 app_license = "mit"
 
