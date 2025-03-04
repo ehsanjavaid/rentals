@@ -1,11 +1,8 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
-<!-- // check whose user is login to the session  -->
-{% set user = frappe.session.user %}
-<ul>
-    <li>{{ user }}</li>
-</ul>
 <h1>Hello</h1>
-<h2>{{ my_secret_emoji }}</h2>
+{% set user = frappe.session.user%}
+<li>{{ user }}</li>
+<h2>{{my_secret_emoji}}</h2>
 {% endblock %}

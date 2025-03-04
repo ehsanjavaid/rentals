@@ -1,9 +1,9 @@
 {
  "actions": [],
  "allow_guest_to_view": 1,
- "allow_import": 1,
- "autoname": "autoincrement",
- "creation": "2025-02-20 10:02:01.168550",
+ "allow_rename": 1,
+ "autoname": "VH-.###",
+ "creation": "2025-03-03 09:23:48.688685",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -12,8 +12,7 @@
   "year",
   "color",
   "insurance_expiry",
-  "condition",
-  "column_break_ktbz",
+  "column_break_vhic",
   "model",
   "license_plate",
   "is_published",
@@ -23,35 +22,41 @@
  ],
  "fields": [
   {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
+  },
+  {
    "fieldname": "make",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Make",
-   "reqd": 1
+   "label": "Make"
   },
   {
    "fieldname": "year",
    "fieldtype": "Int",
-   "label": "Year",
-   "non_negative": 1
+   "label": "Year"
   },
   {
    "fieldname": "color",
    "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "insurance_expiry",
+   "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Color",
+   "label": "Insurance Expiry",
    "reqd": 1
   },
   {
-   "fieldname": "column_break_ktbz",
+   "fieldname": "column_break_vhic",
    "fieldtype": "Column Break"
   },
   {
    "fieldname": "model",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Model",
-   "reqd": 1
+   "label": "Model"
   },
   {
    "fieldname": "license_plate",
@@ -59,22 +64,15 @@
    "label": "License Plate"
   },
   {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "Title",
-   "read_only": 1
-  },
-  {
    "default": "0",
    "fieldname": "is_published",
    "fieldtype": "Check",
-   "label": "Is published"
+   "label": "Is Published?"
   },
   {
    "fieldname": "route",
    "fieldtype": "Data",
-   "label": "Route",
-   "no_copy": 1
+   "label": "Route"
   },
   {
    "fieldname": "vehicle_image",
@@ -82,34 +80,22 @@
    "label": "Vehicle Image"
   },
   {
-   "fieldname": "insurance_expiry",
-   "fieldtype": "Date",
-   "label": "Insurance Expiry",
-   "reqd": 1
-  },
-  {
-   "fieldname": "condition",
-   "fieldtype": "Rating",
-   "label": "Condition"
-  },
-  {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Crashed\nNot In service"
+   "options": "Available\nCrashed\nOut of Service"
   }
  ],
  "has_web_view": 1,
- "hide_toolbar": 1,
  "image_field": "vehicle_image",
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-03-02 17:33:08.563757",
+ "modified": "2025-03-04 08:26:09.628983",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -125,7 +111,7 @@
    "write": 1
   }
  ],
- "route": "cars",
+ "route": "route",
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",

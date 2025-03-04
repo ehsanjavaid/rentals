@@ -1,27 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-02-27 09:52:58.824756",
+ "creation": "2025-03-03 10:06:24.649886",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_j2el",
+  "section_break_lpjd",
   "order",
   "vehicle",
   "amended_from",
-  "column_break_mldp",
+  "column_break_uujr",
   "driver",
-  "section_break_gdkb",
-  "items_column",
+  "section_break_ouoa",
   "items",
-  "section_break_leak",
+  "section_break_phpa",
   "rate",
-  "column_break_yecg",
+  "column_break_tmhw",
   "total_amount"
  ],
  "fields": [
   {
-   "fieldname": "section_break_j2el",
+   "fieldname": "section_break_lpjd",
    "fieldtype": "Section Break"
   },
   {
@@ -43,7 +42,15 @@
    "reqd": 1
   },
   {
-   "fieldname": "column_break_mldp",
+   "fetch_from": "order.vehicle",
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uujr",
    "fieldtype": "Column Break"
   },
   {
@@ -55,20 +62,22 @@
    "reqd": 1
   },
   {
-   "fieldname": "section_break_gdkb",
+   "fieldname": "section_break_ouoa",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "section_break_leak",
+   "fieldname": "section_break_phpa",
    "fieldtype": "Section Break"
   },
   {
    "fieldname": "rate",
-   "fieldtype": "Float",
-   "label": "Rate"
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
-   "fieldname": "column_break_yecg",
+   "fieldname": "column_break_tmhw",
    "fieldtype": "Column Break"
   },
   {
@@ -76,19 +85,6 @@
    "fieldtype": "Currency",
    "label": "Total Amount",
    "read_only": 1
-  },
-  {
-   "fetch_from": "order.vehicle",
-   "fieldname": "vehicle",
-   "fieldtype": "Link",
-   "label": "Vehicle",
-   "options": "Vehicle",
-   "read_only": 1
-  },
-  {
-   "fieldname": "items_column",
-   "fieldtype": "Column Break",
-   "label": "Items"
   },
   {
    "fieldname": "items",
@@ -100,7 +96,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-28 10:07:33.878107",
+ "modified": "2025-03-03 11:05:02.608748",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Ride Booking",
@@ -116,6 +112,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

@@ -1,14 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-02-27 17:40:01.404347",
+ "creation": "2025-03-03 10:05:18.524168",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "source",
   "distance",
-  "column_break_aheb",
+  "column_break_nbyu",
   "destination"
  ],
  "fields": [
@@ -20,15 +20,14 @@
    "reqd": 1
   },
   {
-   "description": "(In KM)",
    "fieldname": "distance",
-   "fieldtype": "Float",
+   "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Distance",
    "reqd": 1
   },
   {
-   "fieldname": "column_break_aheb",
+   "fieldname": "column_break_nbyu",
    "fieldtype": "Column Break"
   },
   {
@@ -42,7 +41,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-02-27 17:40:47.112279",
+ "modified": "2025-03-03 10:06:08.168216",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Ride Booking Item",
