@@ -10,7 +10,7 @@ class RideBooking(Document):
 	items = []
 	def validate(self):
 		if not self.rate:
-			frappe.throw("Please provide a rate")
+			self.rate = frappe.db.get_single_value("Rentals Settings", "standard rates")
 		self.total_amount = 0
 		total_distance = 0
 		for item in self.items:

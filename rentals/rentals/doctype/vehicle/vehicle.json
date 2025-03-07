@@ -12,13 +12,16 @@
   "year",
   "color",
   "insurance_expiry",
+  "condition",
   "column_break_vhic",
   "model",
   "license_plate",
   "is_published",
   "route",
   "vehicle_image",
-  "status"
+  "status",
+  "get_summary",
+  "summary"
  ],
  "fields": [
   {
@@ -83,7 +86,22 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Available\nCrashed\nOut of Service"
+   "options": "Active\nOut of Service\nSold\nCrashed"
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Rating",
+   "label": "Condition"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "HTML",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "get_summary",
+   "fieldtype": "Button",
+   "label": "Get Summary"
   }
  ],
  "has_web_view": 1,
@@ -91,7 +109,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-03-04 08:26:09.628983",
+ "modified": "2025-03-07 09:02:16.300934",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -105,8 +123,18 @@
    "export": 1,
    "print": 1,
    "read": 1,
+   "role": "System Supervisor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "Vehicle Manager",
    "share": 1,
    "write": 1
   }
