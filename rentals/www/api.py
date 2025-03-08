@@ -9,3 +9,7 @@ def throw_emoji(doc, event):
 
 def send_payment_reminders():
     pass
+
+def get__query_conditions_for_vehicle(user):
+    pass
+    # return "name = 1"

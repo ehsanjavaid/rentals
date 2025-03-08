@@ -13,12 +13,13 @@
   "color",
   "insurance_expiry",
   "condition",
+  "vehicle_image",
   "column_break_vhic",
+  "audit_completed",
   "model",
   "license_plate",
   "is_published",
   "route",
-  "vehicle_image",
   "status",
   "get_summary",
   "summary"
@@ -102,6 +103,13 @@
    "fieldname": "get_summary",
    "fieldtype": "Button",
    "label": "Get Summary"
+  },
+  {
+   "default": "0",
+   "fieldname": "audit_completed",
+   "fieldtype": "Check",
+   "label": "Audit Completed?",
+   "permlevel": 1
   }
  ],
  "has_web_view": 1,
@@ -109,7 +117,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-03-07 09:02:16.300934",
+ "modified": "2025-03-08 08:55:28.293277",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -123,7 +131,7 @@
    "export": 1,
    "print": 1,
    "read": 1,
-   "role": "System Supervisor",
+   "role": "System Manager",
    "share": 1,
    "write": 1
   },
@@ -137,9 +145,40 @@
    "role": "Vehicle Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Supervisor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Auditor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Auditor",
+   "share": 1
   }
  ],
- "route": "route",
+ "route": "cars",
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
