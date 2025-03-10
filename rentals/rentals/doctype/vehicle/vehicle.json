@@ -16,6 +16,7 @@
   "vehicle_image",
   "column_break_vhic",
   "audit_completed",
+  "type",
   "model",
   "license_plate",
   "is_published",
@@ -110,6 +111,12 @@
    "fieldtype": "Check",
    "label": "Audit Completed?",
    "permlevel": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Vehicle Type"
   }
  ],
  "has_web_view": 1,
@@ -117,7 +124,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-03-08 08:55:28.293277",
+ "modified": "2025-03-10 09:18:11.349587",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
