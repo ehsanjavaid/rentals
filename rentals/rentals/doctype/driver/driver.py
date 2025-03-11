@@ -6,6 +6,7 @@ from frappe.model.document import Document
 
 
 class Driver(Document):
+    # pass
     def before_save(self):
         if self.last_name:
             self.full_name = f"{self.first_name} {self.last_name}"

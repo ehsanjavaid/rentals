@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "is_standard",
   "description"
  ],
  "fields": [
@@ -13,11 +14,17 @@
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_standard",
+   "fieldtype": "Check",
+   "label": "Is Standard"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-10 09:14:50.320471",
+ "modified": "2025-03-10 09:48:10.429740",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle Type",
